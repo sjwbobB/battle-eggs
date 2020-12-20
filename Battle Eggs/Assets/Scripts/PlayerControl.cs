@@ -11,14 +11,12 @@ public class PlayerControl : MonoBehaviour
 
     void Start()
     {
-        // Setup Rigidbody 2D
-        rigid.freezeRotation = true;
     }
 
     void Update()
     {
         // Move player left and right
         float leftright = Input.GetAxisRaw("Horizontal");
-        rigid.MovePosition(new Vector2(leftright * moveSpeed * Time.deltaTime, 0.0f));
+        rigid.AddForce(new Vector2(moveSpeed * leftright, 0.0f));
     }
 }
