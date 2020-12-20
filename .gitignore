@@ -51,6 +51,11 @@ ExportedObj/
 # Unity3D generated file on crash reports
 sysinfo.txt
 
+# Ignore all .meta files
+*.meta
+# But not source file with postfix, which is everything but a folder
+!*.*.meta
+
 # Builds
 *.apk
 *.unitypackage
