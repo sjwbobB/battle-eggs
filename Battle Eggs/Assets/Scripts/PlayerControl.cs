@@ -13,10 +13,10 @@ public class PlayerControl : MonoBehaviour
     {
     }
 
-    void Update()
+    void LateUpdate()
     {
         // Move player left and right
         float leftright = Input.GetAxisRaw("Horizontal");
-        rigid.AddForce(new Vector2(moveSpeed * leftright, 0.0f));
+        rigid.velocity = Vector2.right * leftright * moveSpeed;
     }
 }
