@@ -525,7 +525,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123149366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -0.04, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -544,6 +544,8 @@ GameObject:
   - component: {fileID: 1290917734}
   - component: {fileID: 1290917737}
   - component: {fileID: 1290917738}
+  - component: {fileID: 1290917739}
+  - component: {fileID: 1290917740}
   m_Layer: 0
   m_Name: camera
   m_TagString: MainCamera
@@ -642,6 +644,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToFollow: {fileID: 1123149366}
   lerpScale: 8
+--- !u!114 &1290917739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290917733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc4c3ff6421dca4fb38d8a5ef862e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: 00c67cd14e2e4ea49b83a958c476061a, type: 3}
+  size: {x: 24, y: 24}
+  relative: 0
+--- !u!114 &1290917740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290917733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f308873e72d7754ab80cb1e5a220d80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: screenshot.png
 --- !u!1 &1330145395
 GameObject:
   m_ObjectHideFlags: 0
