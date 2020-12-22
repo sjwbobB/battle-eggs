@@ -18,7 +18,7 @@ public class PlayerControl : MonoBehaviour
         float leftright = Input.GetAxisRaw("Horizontal");
         bool jumping = Input.GetAxisRaw("Jump") == 1.0f; // jumping = is the "Jump" axis equal to 1? (true/false)
 
-        // Move player left and right
+        // Move player left and right, minding the gravity
         rigid.velocity = new Vector2(0.0f, rigid.velocity.y) + Vector2.right * leftright * moveSpeed;
 
         if (jumping)
@@ -26,12 +26,12 @@ public class PlayerControl : MonoBehaviour
             // Cast a ray under the player's box collider
             RaycastHit2D hit = Physics2D.Raycast(rigid.position + Vector2.down * (collider.size.y + minimalDistanceToGround), Vector2.down);
 
-            if (hit.distance < minimalDistanceToGround)
+            if (hit.distance < minimalDistanceToGround && hit.rigidbody != null)
             {
                 /* 
                  * Launch the player upwards
                  * if the distance from the bottomost point of the collider to the hit position
-                 * is less than the minimal distance. 
+                 * is less than the minimal distance
                  */
 
                 Vector2 vec = rigid.velocity;
