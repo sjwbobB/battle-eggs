@@ -67,4 +67,4 @@ crashlytics-build.properties
 Battle Eggs/Packages/packages-lock.json
 
 # In-game screenshots
-Assets/Screenshots/*.png
+Battle Eggs/Assets/Screenshots/*.png
