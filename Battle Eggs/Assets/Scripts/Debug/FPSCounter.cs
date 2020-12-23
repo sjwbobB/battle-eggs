@@ -15,8 +15,8 @@ public class FPSCounter : MonoBehaviour
 		float msec = deltaTime * 1000.0f;
 		float fps = 1.0f / deltaTime;
 
-		string ftext = string.Format("{0:0.0}", msec);
-		string mtext = string.Format("{0:0.}", fps);
+		string mtext = string.Format("{0:0.0}", msec);
+		string ftext = string.Format("{0:0.}", fps);
 		fpsCounter.text = ftext;
 		msCounter.text = mtext;
 	}
