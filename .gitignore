@@ -64,7 +64,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 # packages-lock.json
-Battle Eggs/Packages/packages-lock.json
+Packages/packages-lock.json
 
 # In-game screenshots
-Battle Eggs/Assets/Screenshots/*
+Assets/Screenshots/*

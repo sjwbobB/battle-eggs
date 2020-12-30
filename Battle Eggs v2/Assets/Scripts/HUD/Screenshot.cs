@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Screenshot : MonoBehaviour
 {
-    public string key;
+    public KeyCode key;
     public string fileName = "screenshot.png";
 
     void FixedUpdate()
